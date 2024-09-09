@@ -1,0 +1,55 @@
+@import "../../App.scss";
+
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+    @include tablet {
+      justify-content: flex-end;
+    }
+
+    @include mobile {
+      justify-content: flex-end;
+    }
+
+    span {
+      font-weight: bold;
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+    }
+
+    .social img {
+      width: 45px;
+      object-fit: contain;
+      padding: 5px;
+      border-radius: 50%;
+      transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease; /* Smooth transition */
+      object-fit: scale-down;
+    }
+
+    .social img:hover {
+      transform: scale(1.1); /* Slightly enlarge the image on hover */
+      filter: invert(1); /* Invert the colors (black/white effect) */
+      background: black; /* Change background color to white on hover */
+    }
+  }
+}

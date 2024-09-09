@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background: #0c0c1d;
+  color: lightgrey;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: white;
+  }
+}
+
+// Mixin for mobile
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content; // @content goes here, so the media query can apply the content
+  }
+}
+
+// Mixin for tablet
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+// Mixin for desktop
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@include tablet {
+  .course {
+    .box {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@include desktop {
+  .course {
+    .box {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
