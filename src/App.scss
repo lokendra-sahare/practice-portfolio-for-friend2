@@ -38,6 +38,10 @@ a {
   }
 }
 
+.About-section {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+}
+
 // Mixin for mobile
 @mixin mobile {
   @media (max-width: 738px) {

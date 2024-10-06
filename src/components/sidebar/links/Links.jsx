@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const Links = () => {
-  const items = ["Homepage", "Services", "Portfolio", "Contact"];
+  const items = ["Homepage", "About", "Portfolio", "Contact"];
 
   const variants = {
     open: {

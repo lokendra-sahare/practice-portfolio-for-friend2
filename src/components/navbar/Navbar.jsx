@@ -16,10 +16,10 @@ export const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Lokendra Dev
+          Dipanshu Dev
         </motion.span>
         <div className="social">
-          <a href="https://www.linkedin.com/in/lokendra-sahare-7ab577261/">
+          <a href="https://www.linkedin.com/in/dipanshu-patel-080513243/">
             <img src={navIcon1} alt="" />
           </a>
           <a href="#">

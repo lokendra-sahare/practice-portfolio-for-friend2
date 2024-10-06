@@ -52,7 +52,7 @@ export const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariant}>LOKENDRA SAHARE</motion.h2>
+          <motion.h2 variants={textVariant}>DIPANSHU PATEL</motion.h2>
           <motion.h1 variants={textVariant}>
             Web Developer and Web Designer
           </motion.h1>
@@ -78,10 +78,10 @@ export const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Writer Content Creator Influencer
+        Front End Web Developer
       </motion.div>
       <div className="imageContainer">
-        <img src="./hero.png" alt="" />
+        <img src="./hero2.png" alt="" />
       </div>
     </div>
   );

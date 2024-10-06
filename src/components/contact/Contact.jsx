@@ -60,7 +60,7 @@ export const Contact = () => {
         <motion.h1 variants={variants}>Let's work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>lokendrasahare@gmail.com</span>
+          <span>dipanshupatel43.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
@@ -68,7 +68,7 @@ export const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+91 748 994 5515</span>
+          <span>+91 929 452 6404</span>
         </motion.div>
       </motion.div>
       <motion.div className="formContainer" variants={variants}>

@@ -3,8 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: process.env.PORT || 3000, // Use the environment variable PORT or default to 3000
-    host: "0.0.0.0", // Bind to all IP addresses so it's accessible externally
+  build: {
+    outDir: "dist", // This is the default, but you can specify it explicitly
   },
 });

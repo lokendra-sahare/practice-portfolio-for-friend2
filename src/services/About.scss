@@ -1,0 +1,171 @@
+.about-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    margin: auto;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 77px;
+  }
+
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: rebeccapurple;
+      position: relative;
+      z-index: 1;
+    }
+
+    .highlighted-text {
+      font-size: 60px;
+      font-weight: 700;
+      color: rgba(247, 238, 238, 0.05);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 50px
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1145px) {
+      flex-direction: column;
+    }
+
+    .profile-picture {
+      flex: 2;
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 1145px) {
+          max-width: 300px;
+        }
+      }
+    }
+
+    .about-description {
+      flex: 2;
+      //   padding-left: 50px;
+
+      @media (max-width: 1145px) {
+        text-align: center;
+      }
+
+      @media (max-width: 480px) {
+        margin-top: 25px;
+      }
+
+      h3 {
+        font-size: 50px;
+        font-weight: 600;
+        color: rebeccapurple;
+
+        @media (max-width: 480px) {
+          font-size: 35px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .position {
+        margin: 10px 0;
+        font-size: 20px;
+        color: white;
+        .highlight {
+          color: rebeccapurple;
+          font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+          max-width: 340px;
+          margin: auto;
+          margin-bottom: 20px;
+          font-size: 16px;
+        }
+      }
+
+      .bio {
+        font-size: 16px;
+        color: white;
+        line-height: 1.6;
+        margin-bottom: 30px;
+
+        @media (max-width: 480px) {
+          width: 95%;
+          margin: auto;
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .experience-details {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 30px;
+        justify-content: center;
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+
+          h4 {
+            font-size: 45px;
+            font-weight: 700;
+            color: white;
+          }
+
+          p {
+            font-size: 14px;
+            color: #777;
+            width: 33%;
+          }
+        }
+      }
+
+      .download-cv {
+        padding: 15px 45px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: rebeccapurple;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: rebeccapurple;
+          box-shadow: 0 4px 12px rgba(170, 83, 232, 0.5);
+        }
+      }
+    }
+  }
+}
